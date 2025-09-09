@@ -1,7 +1,7 @@
 const { default: mongoose } = require('mongoose');
 const Quiz = require('../models/Quiz');
 const Result = require('../models/Result');
-const Feedback =require('../models/feedback');
+const Feedback =require('../models/Feedback');
 const createQuiz = async (req, res) => {
   try {
     const quiz = new Quiz(req.body);
