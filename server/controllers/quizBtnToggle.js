@@ -1,5 +1,5 @@
 // controllers/quizBtnToggle.js
-const QuizBtnVisibility = require('../models/quizBtnVisibility');
+const QuizBtnVisibility = require('../models/QuizBtnVisibility');
 
 const quizBtnToggle = async (req, res) => {
   try {
