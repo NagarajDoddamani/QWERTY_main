@@ -13,6 +13,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// to ensure the server runing
+app.get("/", (req, res) => {
+  res.send("✅ Server is running successfully!");
+});
+
 app.use('/api/quizzes', quizRoutes);
 app.use('/api/user',userRoutes)
 app.use('/api/admin',adminRoute)
